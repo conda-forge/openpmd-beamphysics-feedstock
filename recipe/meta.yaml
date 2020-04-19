@@ -11,8 +11,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
@@ -20,9 +20,10 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - matplotlib
+    - matplotlib-base    
     - numpy
     - scipy
+    - h5py
 
 test:
   imports:
