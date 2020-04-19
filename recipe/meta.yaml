@@ -1,5 +1,5 @@
 {% set name = "openPMD-beamphysics" %}
-{% set version = "0.3.1" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,20 +7,20 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: c80239da4acbf7994dd2d2c5aa74fc07a3c933eef95210ca8ab32f0985f9bc50
+  sha256: a1c26086bd54f36a67716ca73d46cf8b7be1e4c9c26ed215d1bf0dbe77bed632
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
-requirements:  
+requirements:
   host:
     - python >=3.6
     - pip
   run:
     - python >=3.6
-    - matplotlib    
+    - matplotlib
     - numpy
     - scipy
 
@@ -33,7 +33,7 @@ about:
   license: GPL-3.0
   license_family: GPL
   license_file: LICENSE
-  summary: 'Tools for analyzing and viewing particle data in the openPMD standard, extension beamphysics.'
+  summary: Tools for analyzing and viewing particle data in the openPMD standard, extension beamphysics.
   description: |
     Tools for analyzing and viewing particle data in the openPMD standard,
     extension beamphysics.
