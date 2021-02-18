@@ -1,5 +1,5 @@
 {% set name = "openPMD-beamphysics" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: a1c26086bd54f36a67716ca73d46cf8b7be1e4c9c26ed215d1bf0dbe77bed632
+  sha256: a16e07c4ca669a134706a1cb8af4606ebceda9b6ad4c947a431bf92c52ddeb08
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python >=3.6
-    - matplotlib-base    
+    - matplotlib-base
     - numpy
     - scipy
     - h5py
