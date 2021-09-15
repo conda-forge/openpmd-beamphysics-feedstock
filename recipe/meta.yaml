@@ -1,5 +1,5 @@
 {% set name = "openPMD-beamphysics" %}
-{% set version = "0.5.4" %}
+{% set version = "0.5.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/ChristopherMayes/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 57c65b1ea51bd049c15dc8222468ad2f4d26040be571b4135b80f80898172487
+  sha256: 71a6633b4afbf282059bc65c92a5e1c42812b39ada3bace2b10c9b06ad3ec8f8
 
 build:
   noarch: python
