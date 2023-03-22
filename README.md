@@ -1,11 +1,11 @@
-About openpmd-beamphysics
-=========================
+About openpmd-beamphysics-feedstock
+===================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openpmd-beamphysics-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ChristopherMayes/openPMD-beamphysics
 
 Package license: GPL-3.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/openpmd-beamphysics-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for analyzing and viewing particle data in the openPMD standard, extension beamphysics.
 
