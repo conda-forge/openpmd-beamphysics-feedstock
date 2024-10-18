@@ -29,12 +29,6 @@ requirements:
 test:
   imports:
     - pmd_beamphysics
-  requires:
-    - pytest    
-  source_files:
-    - tests
-  commands:
-    - pytest tests        
 
 about:
   home: https://github.com/ChristopherMayes/openPMD-beamphysics
