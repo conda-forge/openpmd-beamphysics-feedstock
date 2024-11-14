@@ -1,5 +1,5 @@
 {% set name = "openpmd-beamphysics" %}
-{% set version = "0.9.8" %}
+{% set version = "0.9.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: 26e375c3819f9f46b836d2223f74c732ce4f5c04b09d6f68d8d4b1b91d49a689
+  sha256: 3b5d1e65dae04a0d736be5d73c13c8c73f14684161a1768eb24c596370155228
 
 build:
   noarch: python
@@ -18,7 +18,7 @@ requirements:
   host:
     - python >=3.9
     - pip
-    - setuptools    
+    - setuptools
   run:
     - python >=3.9
     - matplotlib-base
