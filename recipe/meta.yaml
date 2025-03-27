@@ -32,8 +32,8 @@ test:
 
 about:
   home: https://github.com/ChristopherMayes/openPMD-beamphysics
-  license: GPL-3.0
-  license_family: GPL
+  license:  Apache-2.0
+  license_family: Apache
   license_file: LICENSE
   summary: Tools for analyzing and viewing particle data in the openPMD standard, extension beamphysics.
   description: |
