@@ -23,8 +23,9 @@ requirements:
     - python >=3.9
     - matplotlib-base
     - numpy
-    - scipy
+    - scipy >=1.0.0
     - h5py
+    - python-dateutil
 
 test:
   imports:
