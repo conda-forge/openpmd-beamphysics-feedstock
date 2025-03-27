@@ -11,16 +11,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - matplotlib-base
     - numpy
     - scipy >=1.0.0
@@ -28,12 +28,14 @@ requirements:
     - python-dateutil
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - pmd_beamphysics
 
 about:
   home: https://github.com/ChristopherMayes/openPMD-beamphysics
-  license:  Apache-2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Tools for analyzing and viewing particle data in the openPMD standard, extension beamphysics.
