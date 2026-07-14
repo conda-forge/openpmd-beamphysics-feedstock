@@ -1,5 +1,5 @@
 {% set name = "openpmd-beamphysics" %}
-{% set version = "0.15.1" %}
+{% set version = "0.16.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name|replace("-", "_") }}-{{ version }}.tar.gz
-  sha256: 3bff7c012fa83071026e169665937ae7cc3bec9a67751671fae4082d1908f5e1
+  sha256: efaf64300dc62c5f0f9e5c7cbb11f9c35b397508f85c21c9256124659eac2768
 
 build:
   noarch: python
